@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>interactive button</title>
+  <style>
+    button {
+      background-color: green;
+      border: none;
+      color: white;
+      font-size: 20px;
+      padding: 10px 20px 10px 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <button class="order-now-button" onclick="
+      console.log('you have ordered.\n');
+      cart_quantity++;
+      console.log('cart quantity: ' + cart_quantity);
+      alert('you have ordered something.\n');
+      ">
+    Order now
+  </button>
+  <script>
+    let cart_quantity = 0;
+  </script>
+</body>
+
+</html>

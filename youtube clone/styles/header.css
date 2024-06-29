@@ -1,0 +1,188 @@
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 70px;
+  margin-bottom: 20px;
+  box-shadow: 2px 0 2px gray;
+  align-items: center;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: rgb(175, 175, 175);
+  background-color: white;
+  z-index: 100;
+}
+
+.start-section {
+  width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.center-section {
+  flex: 1;
+  margin-left: 80px;
+  margin-right: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.end-section {
+  display: flex;
+  width: 200px;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 24px;
+}
+
+
+.search-box {
+  border: 1px solid gray;
+  padding: 10px 20px 10px 20px;
+  border-radius: 20px 0 0 20px;
+  flex: 1;
+  max-width: 400px;
+  width: 0;
+}
+
+.hamburger-menu {
+  height: 25px;
+}
+
+.youtube-logo {
+  height: 20px;
+}
+
+.search-icon-button {
+
+  width: 50px;
+  padding-left: 5px;
+  border: 1px solid gray;
+  height: 37px;
+  border-radius: 0 20px 20px 0;
+  transition: background-color 0.15s;
+  margin-left: -1px;
+}
+
+.search-icon-button,
+.voice-search-button,
+.camera-button,
+.notification-button {
+  background-color: white;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-icon-button .tooltip,
+.voice-search-button .tooltip,
+.camera-button .tooltip,
+.notification-button .tooltip {
+  position: absolute;
+  background-color: rgb(170, 170, 170);
+  color: white;
+  padding: 5px 8px 5px 8px;
+  border-radius: 3px;
+  top: 40px;
+  opacity: 0;
+  transition: opacity 0.15s;
+  pointer-events: none;
+  white-space: nowrap;
+}
+
+.search-icon-button:hover .tooltip,
+.voice-search-button:hover .tooltip,
+.camera-button:hover .tooltip,
+.notification-button:hover .tooltip {
+  opacity: 1;
+}
+
+.search-icon-button:hover {
+  background-color: rgb(220, 220, 220);
+}
+
+.search-icon {
+  height: 25px;
+  margin-bottom: -4px;
+}
+
+.voice-search-button {
+  border: none;
+}
+
+.voice-search-button:hover {
+  background-color: rgb(220 220 220);
+  border-radius: 50%;
+}
+
+.voice-search-icon {
+  height: 25px;
+  display: block;
+  margin: 0 auto;
+}
+
+.camera-icon {
+  height: 25px;
+}
+
+.camera-button {
+  height: 35px;
+  width: 35px;
+  border: none;
+  background-color: white;
+  padding: 5px 5px 5px 5px;
+  border-radius: 50%;
+}
+
+.camera-button:hover {
+  background-color: rgb(221, 221, 221);
+}
+
+
+.square-icon {
+  height: 25px;
+}
+
+.notification-icon {
+  height: 25px;
+}
+
+.notification-button {
+  height: 35px;
+  width: 35px;
+  background-color: white;
+  border: none;
+  border-radius: 50%;
+  padding: 5px 5px 5px 5px;
+  position: relative;
+}
+
+.notification-button:hover {
+  background-color: rgb(220 220 220);
+}
+
+.notification-count {
+  position: absolute;
+  top: 5px;
+  right: 4px;
+  border: none;
+  background-color: red;
+  border-radius: 50%;
+  height: 10px;
+  width: 10px;
+  padding: 2px 2px 2px 2px;
+  font-size: 10px;
+  color: white;
+}
+
+.account-logo {
+  height: 30px;
+}

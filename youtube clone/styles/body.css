@@ -1,0 +1,77 @@
+body {
+  margin: 0;
+  padding-top: 95px;
+  padding-left: 100px;
+  background-color: rgb(238, 237, 237);
+  padding-right: 20px;
+}
+
+.video-title {
+  font-size: 130%;
+  font-weight: 700;
+  margin-bottom: 4%;
+}
+
+.misc-text {
+  color: gray;
+  font-size: 90%;
+  line-height: 120%;
+}
+
+.thumbnail {
+  width: 100%;
+  position: relative;
+}
+
+.thumbnail-image {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 3%;
+}
+
+.timestamp {
+  position: absolute;
+  bottom: 20px;
+  right: 10px;
+  background-color: rgb(0, 0, 0, 0.7);
+  padding: 2px 5px 2px 5px;
+  border-radius: 5px;
+  font-size: 12px;
+  color: white;
+  font-weight: bold;
+}
+
+.channel-logo {
+  width: 100%;
+  border-radius: 50%;
+}
+
+.layout-div {
+  display: grid;
+  column-gap: 10px;
+  row-gap: 20px;
+}
+
+@media (max-width: 600px) {
+  .layout-div {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 999px) {
+  .layout-div {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media (min-width: 1000px) {
+  .layout-div {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+.logo-stats-div {
+  display: grid;
+  grid-template-columns: 45px 1fr;
+  column-gap: 30px;
+}

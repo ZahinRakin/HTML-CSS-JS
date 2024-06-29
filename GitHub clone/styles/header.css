@@ -1,0 +1,13 @@
+.header {
+  height: 64px;
+  background-color: #0d1117;
+}
+
+.three-vert-line {
+  height: 25px;
+  border: 1px solid gray;
+}
+
+.white-cat {
+  height: 25px;
+}

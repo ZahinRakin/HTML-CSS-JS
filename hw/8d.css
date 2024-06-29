@@ -1,0 +1,15 @@
+.first-name,
+.last-name,
+.email {
+  border: 1px solid Gray;
+  border-radius: 4px;
+  padding: 10px 20px 10px 20px;
+  width: 200px;
+  margin-right: 10px;
+}
+
+.email {
+  margin-top: 15px;
+  display: block;
+  width: 454px;
+}
